@@ -16,15 +16,13 @@
       <a href="#">Корзина</a>
     </header>
     <main>
-      
+      <h1>Студия Нёрдс</h1>
       <section>
-        <h1>Студия Нёрдс</h1>
-        <b>Долго, дорого,<br> скрупулезно.</b>
+        <h2>Как мы работаем</h2>
+        <p><b>Долго, дорого,<br> скрупулезно.</b></p>
         <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
         <a href="#">Узнать больше</a>
-        <figure>
-          <img src="img/nerds-index-slide1 1.png" width="760" height="431" alt="Наши умения"/>
-        </figure>
+        <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Презентация наших приложений"/>
         <button type="button"></button>
         <button type="button"></button>
         <button type="button"></button>
@@ -53,8 +51,9 @@
       
       <section>
         <h2>О нас</h2>
-        <strong>Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</strong>
+        <p>Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h3>Выполняем заказы на разработку:</h3>
         <ul>
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для IOS и Android</li>
@@ -64,11 +63,18 @@
       
       <section>
         <h2>Статистика</h2>
-        <img src="img/nerds-illustration 1.png"/>
+        <img src="img/nerds-illustration1.png" width="360" height="208" alt="Логотип студии Нёрдс"/>
         <p>С 2004 года любим точность во всём</p>
-        <p><b>146%</b><br>Уровень<br> самоотдачи</p>
-        <p><b>100%</b><br>Соблюдение<br>сроков</p>
-        <p><b>50%</b><br>Минимальная<br>предоплата</p>
+        <dl>
+          <dt><b>146%</b></dt>
+          <dd>Уровень самоотдачи</dd>
+
+          <dt><b>100%</b></dt>
+          <dd>Соблюдение сроков</dd>
+
+          <dt><b>50%</b></dt>
+          <dd>Минимальная предоплата</dd>
+        </dl>
       </section>
       
       <section>
@@ -82,33 +88,17 @@
       </section>
 
       <section>
-        <h2>Карта</h2>
-      </section>
-
-      <!-- Контекстное окно "Напишите нам" -->
-      <section>
-        <h2>Напишите нам</h2>
-        <button type="button">Закрыть</button>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <ul>
-            <li>
-              <label for="name">Ваше имя:</label>
-              <br>
-              <input type="text" id="name" name="name" placeholder="Имя Фамилия">
-            </li>
-            <li>
-              <label for="email">Ваш email:</label>
-              <br>
-              <input type="text" id="email" name="email" placeholder="email@example.com">
-            </li>
-            <li>
-              <label for="message">Текст письма:</label>
-              <br>
-              <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
-            </li>
-          </ul>
-          <button type="submit">Отправить</button>
-        </form>
+        <h2>Как до нас добраться</h2>
+        <div>
+          <p>NЁRDS DESIGN STUDIO</p>
+          <address>
+            <p>191186, Санкт-Петербург,</p>
+            <p>ул. Б. Конюшенная, д. 19/8</p>
+          </address>
+          <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+          <a href="#">Напишите нам</a>
+        </div>
+        <div></div>
       </section>
     </main>
     <footer>
@@ -117,8 +107,28 @@
         <li><a href="#"><img src="img/fb.svg" width="81" alt="Facebook"></a></li>
         <li><a href="#"><img src="img/inst.svg" width="81" alt="Instagram"></a></li>
       </ul>
-        <b>Давайте дружить, это выгодно!</b>
+        <p><b>Давайте дружить, это выгодно!</b></p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+    <!-- Контекстное окно "Напишите нам" -->
+    <section>
+      <h2>Напишите нам</h2>
+      <button type="button">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <label for="email">Ваш email:</label>
+          <input type="text" id="email" name="email" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="message">Текст письма:</label>
+          <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
